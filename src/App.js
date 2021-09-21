@@ -1,4 +1,4 @@
-import './index.css';
+import './style/index.css';
 import Rectangle from "./components/Rectangle";
 import Block from "./components/Block";
 
