@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.rectangle {
+  height: 100px;
+  width: 500px;
+  border-color: orange;
+  border-style: dashed;
+  border-width: 3px;
+  background-color: blue;
+  margin: 10px;
+}

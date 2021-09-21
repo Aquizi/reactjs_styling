@@ -1,5 +1,4 @@
 import './App.css';
-import './components/rectangle.css'
 import Rectangle from "./components/Rectangle";
 import Block from "./components/Block";
 
