@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Rectangle from "./components/Rectangle";
 import Block from "./components/Block";
 
