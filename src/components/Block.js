@@ -1,32 +1,32 @@
 import React from "react";
 
-function Block(){
+function Block(props){
 
-    let colorCount=React.useState(0);
+    const [backColor, setBackColor] = React.useState(props.data.backColor);
+    const [borderColor, setBorderColor]= React.useState(props.data.borderColor);
 
-    const fillColorsList=["red","blue","green"];
-    const borderColorsList=["blue","green","red"];
-
-    const changeColor=()=>{
-        colorCount++
-        if(colorCount>2){
-            colorCount=0
-        }
+    let changeColor = () =>{
+        setBackColor("Green")
+        setBorderColor("Red")
     }
 
-    let style={
-        height:"100px",
-        width:"100px",
-        border:"solid",
-        borderWidth:"2px",
-        margin:"10px",
-        backgroundColor:fillColorsList[colorCount],
-        borderColor:borderColorsList[colorCount]
+    let style=
+        {
+            height:"100px",
+            width:"100px",
+            border:"solid",
+            borderWidth:"2px",
+            margin:"10px",
+            backgroundColor:backColor,
+            borderColor:borderColor
     }
+
 
     return(
-        <div style={style} onClick={changeColor}>
-        </div>
+        <span>
+            <div style={style} onClick={() => changeColor()}>
+            </div>
+        </span>
     )
 }
 
